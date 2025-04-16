@@ -23,7 +23,7 @@ const HeroSection = () => {
             }
         }
 
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll)
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [])
@@ -35,11 +35,11 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-8xl lg:text-[105px] pb-6 gradient-title">
           Manejas Tus Finanzas <br /> con Inteligencia?
         </h1>
-        <p>
+        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Aprende a controlar, analizar, y optimizar tus gastos con información
           en tiempo real.
         </p>
-        <div>
+        <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
             <Button size="lg" className="px-8">
               Comienza YA
@@ -50,13 +50,14 @@ const HeroSection = () => {
               Boton Genérico
             </Button>
           </Link>
-          <Button 
+          {/* <Button 
             onClick={() => imageRef.current.classList.toggle("scrolled")}
             variant="outline"
             className="mt-4"
           >
             Toggle Animation
-          </Button>
+          </Button> */}
+          {/* ! Solo Testing */}
         </div>
         <div className="hero-image-wrapper">
           <div ref={imageRef} className="hero-image">
