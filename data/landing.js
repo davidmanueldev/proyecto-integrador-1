@@ -30,34 +30,34 @@ import {
   // Datos de características (features)
   export const featuresData = [
     {
-      icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
+      icon: <BarChart3 className="h-8 w-8 text-purple-600" />,
       title: "Análisis Avanzados",
       description:
         "Obtenga información detallada sobre sus patrones de gasto con análisis basados en IA",
     },
     {
-      icon: <Receipt className="h-8 w-8 text-blue-600" />,
+      icon: <Receipt className="h-8 w-8 text-purple-600" />,
       title: "Escáner Inteligente de Recibos",
       description:
         "Extraiga datos automáticamente de los recibos mediante tecnología avanzada de IA",
     },
     {
-      icon: <PieChart className="h-8 w-8 text-blue-600" />,
+      icon: <PieChart className="h-8 w-8 text-purple-600" />,
       title: "Planificación de Presupuestos",
       description: "Cree y gestione presupuestos con recomendaciones inteligentes",
     },
     {
-      icon: <CreditCard className="h-8 w-8 text-blue-600" />,
+      icon: <CreditCard className="h-8 w-8 text-purple-600" />,
       title: "Soporte Multicuenta",
       description: "Gestionar varias cuentas y tarjetas de crédito en un solo lugar",
     },
     {
-      icon: <Globe className="h-8 w-8 text-blue-600" />,
+      icon: <Globe className="h-8 w-8 text-purple-600" />,
       title: "Multidivisa",
       description: "Soporte para múltiples divisas con conversión en tiempo real",
     },
     {
-      icon: <Zap className="h-8 w-8 text-blue-600" />,
+      icon: <Zap className="h-8 w-8 text-purple-600" />,
       title: "Información Financiera Automatizada",
       description: "Obtenga información y recomendaciones personalizadas basadas en IA",
     },
@@ -66,19 +66,19 @@ import {
   // Datos de Como Funciona (How It Works)
   export const howItWorksData = [
     {
-      icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-      title: "1. Create Tu Cuenta",
+      icon: <CreditCard className="h-8 w-8 text-purple-600" />,
+      title: "1. Crea Tu Cuenta",
       description:
         "Comience en cuestión de minutos con un proceso de registro fácil y rápido",
     },
     {
-      icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
+      icon: <BarChart3 className="h-8 w-8 text-purple-600" />,
       title: "2. Controle Sus Gastos",
       description:
         "Categorice y rastree automáticamente sus transacciones en tiempo real",
     },
     {
-      icon: <PieChart className="h-8 w-8 text-blue-600" />,
+      icon: <PieChart className="h-8 w-8 text-purple-600" />,
       title: "3. Obtén Información",
       description:
         "Reciba información y recomendaciones basadas en inteligencia artificial para optimizar sus finanzas.",
