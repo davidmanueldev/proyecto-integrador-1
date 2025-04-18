@@ -141,6 +141,10 @@
   .gradient-title {
     @apply bg-gradient-to-br from-red-600 to-purple-600 font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
   }
+
+  .gradient-text {
+    @apply bg-gradient-to-br from-red-600 to-purple-600 font-semibold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
+  }
 }
 
 .hero-image-wrapper {
