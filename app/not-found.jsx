@@ -66,7 +66,7 @@ const NotFound = () => {
         </defs>
       </svg>
 
-      <h2>Page Not Found</h2>
+      <h2>Página no encontrada</h2>
     </div>
   );
 };
