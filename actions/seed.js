@@ -12,7 +12,7 @@ const CATEGORIES = {
     { name: "Salario", range: [5000, 8000] },
     { name: "Freelance", range: [1000, 3000] },
     { name: "Inversiones", range: [500, 2000] },
-    { name: "Otros ingresos", range: [100, 1000] },
+    { name: "Otros Ingresos", range: [100, 1000] },
   ],
   EXPENSE: [
     { name: "Vivienda", range: [1000, 2000] },

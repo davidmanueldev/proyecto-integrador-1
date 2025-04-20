@@ -10,7 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { categoryColors } from "@/data/categories";
+import { categoryColors, defaultCategories } from "@/data/categories";
 import { format } from "date-fns";
 import React from "react";
 
@@ -77,14 +77,14 @@ const TransactionTable = ({ transactions }) => {
                   <TableCell className="capitalize">
                     <span
                       style={{
-                        background: categoryColors[transaction.category],
+                        // Cambiar de usar el nombre de categoría a usar un mapeo de ID
+                        background: getCategoryColorById(transaction.category),
                       }}
                       className="px-2 py-1 rounded text-white text-sm"
                     >
                       {transaction.category}
                     </span>
                   </TableCell>
-                  <TableCell>Credit Card</TableCell>
                   <TableCell className="text-right">$250.00</TableCell>
                 </TableRow>
               ))
@@ -94,6 +94,18 @@ const TransactionTable = ({ transactions }) => {
       </div>
     </div>
   );
+
+  // Añade esta función auxiliar al componente
+  function getCategoryColorById(categoryName) {
+    // Busca la categoría por nombre para encontrar su ID
+    const category = defaultCategories.find(cat => cat.name === categoryName);
+    // Si la encuentra, usa ese ID para obtener el color
+    if (category) {
+      return categoryColors[category.id];
+    }
+    // Color por defecto si no se encuentra
+    return "#94a3b8"; 
+  }
 };
 
 export default TransactionTable;

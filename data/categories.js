@@ -162,7 +162,7 @@ export const defaultCategories = [
   ];
   
   export const categoryColors = defaultCategories.reduce((acc, category) => {
-    acc[category.name] = category.color;
+    acc[category.id] = category.color;
     return acc;
   }, {});
   
