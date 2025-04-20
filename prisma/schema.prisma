@@ -52,7 +52,7 @@ enum AccountType {
 
 model Transaction {
   id                String             @id @default(uuid())
-  type              Decimal
+  type              TransactionType
   amount            Decimal
   description       String?
   date              DateTime
