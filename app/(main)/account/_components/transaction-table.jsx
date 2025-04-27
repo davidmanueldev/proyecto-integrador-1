@@ -155,12 +155,15 @@ const TransactionTable = ({ transactions }) => {
     ) {
       return;
     }
-    deleteFn(selectedIds);
+    await deleteFn(selectedIds);
+    router.refresh();
   };
 
   useEffect(() => {
     if (deleted && !deleteLoading) {
-      toast.error("Transacciones eliminadas correctamente");
+      toast.success("Transacciones eliminadas correctamente");
+      // Limpiar los IDs seleccionados después de eliminar
+      setSelectedIds([]);
     }
   }, [deleted, deleteLoading]);
 
@@ -404,7 +407,10 @@ const TransactionTable = ({ transactions }) => {
                         <DropdownMenuSeparator />
                         <DropdownMenuItem
                           className="text-destructive"
-                          onClick={() => deleteFn([transaction.id])}
+                          onClick={async () => {
+                            await deleteFn([transaction.id]);
+                            router.refresh();
+                          }}
                         >
                           Borrar
                         </DropdownMenuItem>

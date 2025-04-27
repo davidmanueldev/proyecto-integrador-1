@@ -5,7 +5,9 @@ import TransactionTable from "../_components/transaction-table";
 import { BarLoader } from "react-spinners";
 
 const AccountsPage = async ({ params }) => {
-  const accountData = await getAccountWithTransactions(params.id);
+  // En Next.js 15, los parámetros dinámicos deben ser esperados antes de usar sus propiedades
+  const { id } = await params;
+  const accountData = await getAccountWithTransactions(id);
 
   if (!accountData) {
     notFound();
